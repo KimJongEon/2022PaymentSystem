@@ -1,0 +1,51 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.4'
+	id 'io.spring.dependency-management' version '1.0.14.RELEASE'
+	id 'java'
+}
+
+group = 'com.jongeon.paymentsystem'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// ##### jdbc #####
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	
+	// ##### MariaDB #####
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	
+	// ##### Mybatis #####
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+	
+	// ##### Hateoas #####
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+	
+	// Spring 프로젝트에 필요한 대부분의 라이브러리가 추가 됨 (Starter-web)
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+	// ##### Lombok #####
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	
+	// ##### Devtools #####
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	
+	// Test 환경 구성을 위한 의존성 주입, 테스트 코드를 수행할 때만 적용
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
