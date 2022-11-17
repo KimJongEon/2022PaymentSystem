@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.jongeon.paymentsystem.mapper.OrderMapper">
+	<!-- 주문 -->
+	<insert id="order" parameterType="com.jongeon.paymentsystem.domain.OrderVO">
+		insert into ORDER_TB (paymentType) values
+		( #{paymentType})
+	</insert>
+	
+</mapper>
