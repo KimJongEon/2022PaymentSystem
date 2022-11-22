@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Getter //값을 반환해주는 getter를 자동으로 만들어주는 lombok annotation
 @Builder // 필드의 순서에 상관없이 객체 생성 가능, 원하는 필드만 가지고 객체 생성가능 //필드 : 클래스에 포함된 변수
 public class ProductVO {
-	private Long productIdx; // PK 상품 (고유)번호
+	private long productIdx; // PK 상품 (고유)번호
 	private String productName; // 상품 이름
 	private String productPrice; //  상품 가격
 

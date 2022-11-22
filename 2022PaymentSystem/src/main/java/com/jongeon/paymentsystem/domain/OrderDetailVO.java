@@ -11,9 +11,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 public class OrderDetailVO {
-	private Long orderDetailIdx; // PK
-	private Long orderPrice; // 주문 금액
-	private Long productCount; // 주문한 상품 개수
-	private Long orderNumber; // FK 주문번호
-	private Long productIdx; // FK 상품 (고유)번호
+	private long orderDetailIdx; // PK
+	private long productCount; // 주문한 상품 개수
+	private long orderIdx; // FK 주문번호
+	private long productIdx; // FK 상품 (고유)번호
+	
+	// 조인 할때 쓰일 것들
+	private long orderPrice; // 주문 금액
 }

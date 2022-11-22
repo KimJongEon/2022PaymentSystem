@@ -2,10 +2,37 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
 <mapper namespace="com.jongeon.paymentsystem.mapper.OrderMapper">
+	
 	<!-- 주문 -->
-	<insert id="order" parameterType="com.jongeon.paymentsystem.domain.OrderVO">
+	<insert id="registerOrder" useGeneratedKeys="true" keyProperty="orderIdx" keyColumn="orderIdx" parameterType="map">
 		insert into ORDER_TB (paymentType) values
 		( #{paymentType})
 	</insert>
 	
+	<!-- 주문 디테일 -->
+	<insert id="registerOrderDetail" parameterType="com.jongeon.paymentsystem.domain.OrderDetailVO">
+		insert into ORDERDETAIL_TB (orderIdx, productCount, productName, productPrice) values
+		( #{orderIdx}, #{productCount}, #{productName},  #{productPrice})
+	</insert>
+	
+	<!-- 주문 내역 가져오기 -->
+	<select id="getOrderHistory" resultType="map">
+    	<![CDATA[
+    		select ot.orderIdx, ot.paymentType, DATE_FORMAT(ot.orderDate, '%Y.%m.%d %H:%i:%s') as orderDate, sum(productPrice * productCount) as orderPrice
+			from ORDERDETAIL_TB od, ORDER_TB ot
+			where od.orderIdx = ot.orderIdx
+			group by od.orderIdx
+			order by ot.orderDate DESC
+        ]]>
+	</select>
+	
+	<!-- 주문 상세 내역 가져오기 -->
+	<select id="getOrderHistoryDetail" resultType="map">
+    	<![CDATA[	
+    		select *
+			from ORDERDETAIL_TB od, ORDER_TB ot
+			where od.orderIdx = ot.orderIdx and
+			od.orderIdx = #{orderIdx}
+        ]]>
+	</select>
 </mapper>
