@@ -17,6 +17,6 @@ import lombok.NoArgsConstructor;
 public class ProductVO {
 	private long productIdx; // PK 상품 (고유)번호
 	private String productName; // 상품 이름
-	private String productPrice; //  상품 가격
+	private long productPrice; //  상품 가격
 
 }

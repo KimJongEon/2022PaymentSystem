@@ -10,4 +10,19 @@
     		from PRODUCT_TB
         ]]>
 	</select>
+	
+	<!-- 상품 추가 -->
+	<insert id="registerProduct" parameterType="com.jongeon.paymentsystem.domain.ProductVO">
+		insert into PRODUCT_TB (productName, productPrice) values
+		( #{productName},  #{productPrice} )
+	</insert>
+	
+	<!-- 상품 삭제 -->
+	<delete id="deleteProduct"  parameterType="com.jongeon.paymentsystem.domain.ProductVO">
+		delete
+		from PRODUCT_TB
+		where productIdx = #{productIdx}
+	</delete>
+	
+	
 </mapper>

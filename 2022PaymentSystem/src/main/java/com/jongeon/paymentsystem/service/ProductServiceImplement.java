@@ -1,6 +1,7 @@
 package com.jongeon.paymentsystem.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,27 @@ public class ProductServiceImplement implements ProductService {
 	public List<ProductVO> getProductList() {
 		// TODO Auto-generated method stub
 		return productMapper.getProductList();
+	}
+	
+	
+	// 상품 등록
+	@Override
+	public long registerProduct(Map<String, Object> editedProductListMap) {
+		// TODO Auto-generated method stub
+		String productName = String.valueOf(editedProductListMap.get("productName"));
+		long productPrice = Long.parseLong(String.valueOf(editedProductListMap.get("productPrice")));
+		
+		System.out.println(productName);
+		System.out.println(productPrice);
+		return productMapper.registerProduct(productName, productPrice);
+	}
+
+	
+	// 상품 삭제
+	@Override
+	public long deleteProduct(long productIdx) {
+		// TODO Auto-generated method stub
+		return productMapper.deleteProduct(productIdx);
 	}
 
 }
