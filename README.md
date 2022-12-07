@@ -30,6 +30,7 @@
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206096684-cfea1829-7966-4ca7-9bb5-4621e4028468.png">
 
+- 결제 금액은 자동으로 합산
 - 초기화 버튼 클릭 시 테이블에 있는 선택 한 모든 상품 리스트에서 삭제
 
 
