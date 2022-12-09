@@ -1,9 +1,9 @@
 # POS 시스템 (2022PaymentSystem)
 > 프로젝트 개발 배경
 
-- React 강의 및 실습은 부족함을 느껴 작은 프로젝트라도 만들어 보는게 도움이 많이 될 거라 생각하여 진행하게 되었습니다.
-- spring 기반으로 프론트쪽은 React를 사용
+- RestAPI와 React를 사용해보기 위해 웹으로 POS 시스템을 만들어 보았습니다.
 - React Repository : https://github.com/KimJongEon/frontend
+
 
 ## 주요 기능
 > 주문
