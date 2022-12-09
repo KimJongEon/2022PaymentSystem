@@ -5,14 +5,6 @@
 - spring 기반으로 프론트쪽은 React를 사용
 - React Repository : https://github.com/KimJongEon/frontend
 
-<hr>
-
-# spring, react 데이터 관리 구조 추가
-- ㅁㄴㅇ
-- ㅁㄴㅇㅁㄴㅇ
-
-<hr>
-
 ## 주요 기능
 > 주문
 - 메뉴 선택
@@ -65,10 +57,27 @@
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099600-e6e2ccee-bd10-4229-963b-f535c23aac7a.png">
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099622-3d37753b-2155-48d4-887f-bb0e3720cf8b.png">
 
+## 프로젝트 구조
+> 기술
+- Spring Boot
+- React
+- MariaDB
 
 
-## 패키지 구조
-> 요약
+> React에서 data를 저장 및 활용하는 구조
+
+
+
+
+
+## API
+
+![image](https://user-images.githubusercontent.com/45247057/206601808-98817379-ae25-4b49-a715-32a8c5327620.png)
+
+- API 참고 URL : https://documenter.getpostman.com/view/24826100/2s8YzQXPvT
+
+
+
 
 
 
