@@ -61,9 +61,10 @@
 
 
 > React에서 data를 저장 및 활용하는 구조
-
-
-
+- 컴포넌트 안에서 useEffect에서 비동기(axios) 요청
+- 데이터 가져오기 성공하면 store.js에 저장하라고 dispatch
+<br/>
+☞ 리액트 깃허브 (React Repository) : https://github.com/KimJongEon/frontend
 
 
 ## API
