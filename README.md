@@ -2,29 +2,26 @@
 > 프로젝트 개발 배경
 
 - RestAPI와 React를 사용해보기 위해 웹으로 POS 시스템을 만들어 보았습니다.
-- React Repository : https://github.com/KimJongEon/frontend
 
+<br/>
 
-## 주요 기능
-> 주문
-- 메뉴 선택
+☞ 리액트 깃허브 주소 (React Repository) : https://github.com/KimJongEon/frontend
 
-> 주문 내역 확인
-- 주문 내역
-
-> 메뉴 관리
-- 메뉴 삭제, 추가
 
 ## 1. 주문(홈 화면)
 > 주문(메뉴 선택) : 해당 메뉴 클릭 시 테이블에 추가 됩니다.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206096654-2f376048-0a86-4995-b62a-901c09706bd8.png">
 
+<hr/>
+
 > 상품 수량 변경 : + 혹은 - 버튼 클릭 시 수량을 변경 할 수 있습니다.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206096603-f81533e8-3539-469b-a723-870efd460886.png">
 
-- 결제 금액은 자동으로 합산
+- 결제 금액은 실시간으로 자동 합산
+
+<hr/>
 
 > 결제 : 현금 혹은 카드 결제로 구분되어 결제됩니다. 결제 완료 후 주문 내역이 추가 됩니다.
 
@@ -38,6 +35,8 @@
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206098699-10f22a55-812c-4ad9-bb94-7f6173b3981f.png">
 
+<hr/>
+
 > 상세 주문 내역 : 해당 주문 선택시 상세 내역 확인 할 수 있습니다.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099095-9b9cffd2-e91a-4c77-8fe1-971b2f3dcd6c.png">
@@ -47,6 +46,8 @@
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099442-eccb6288-5772-4212-aaaf-497e645d3653.png">
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099461-d24c186b-a241-441c-9893-6dea0f9617e7.png">
+
+<hr/>
 
 > 메뉴 삭제
 
