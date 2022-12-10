@@ -16,17 +16,17 @@
 - 메뉴 삭제, 추가
 
 ## 1. 주문(홈 화면)
-> 주문(메뉴 선택)
+> 주문(메뉴 선택) : 해당 메뉴 클릭 시 테이블에 추가 됩니다.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206096654-2f376048-0a86-4995-b62a-901c09706bd8.png">
 
-> 상품 수량 변경
+> 상품 수량 변경 : + 혹은 - 버튼 클릭 시 수량을 변경 할 수 있습니다.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206096603-f81533e8-3539-469b-a723-870efd460886.png">
 
 - 결제 금액은 자동으로 합산
 
-> 결제
+> 결제 : 현금 혹은 카드 결제로 구분되어 결제됩니다. 결제 완료 후 주문 내역이 추가 됩니다.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206096684-cfea1829-7966-4ca7-9bb5-4621e4028468.png">
 
@@ -34,20 +34,16 @@
 
 
 ## 2. 주문 내역 확인
-> 주문 리스트
+> 주문 리스트 : 최근 주문 내역을 상단에 배치
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206098699-10f22a55-812c-4ad9-bb94-7f6173b3981f.png">
 
-- 최근 주문 내역을 상단에 배치
-
-> 상세 주문 내역
+> 상세 주문 내역 : 해당 주문 선택시 상세 내역 확인 할 수 있습니다.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099095-9b9cffd2-e91a-4c77-8fe1-971b2f3dcd6c.png">
 
-- 해당 주문 선택시 상세 내역 확인
-
 ## 3. 메뉴 관리
-> 메뉴 추가
+> 메뉴 추가 : 상품 이름, 가격 입력 후 완료 시 메뉴에 추가 됩니다. 
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099442-eccb6288-5772-4212-aaaf-497e645d3653.png">
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/45247057/206099461-d24c186b-a241-441c-9893-6dea0f9617e7.png">
