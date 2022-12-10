@@ -56,7 +56,9 @@
 
 ## 프로젝트 구조
 > 기술
-- Spring Boot
+
+- Java 11
+- Spring 4.14.1, Spring Boot 2.7.4
 - React
 - MariaDB
 
