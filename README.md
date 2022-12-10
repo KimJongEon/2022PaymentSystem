@@ -70,7 +70,8 @@
 
 ## API
 
-![image](https://user-images.githubusercontent.com/45247057/206601808-98817379-ae25-4b49-a715-32a8c5327620.png)
+![image](https://user-images.githubusercontent.com/45247057/206825334-cd14668a-3403-41a1-9382-c98b3bc7a832.png)
+
 
 - API 참고 URL : https://documenter.getpostman.com/view/24826100/2s8YzQXPvT
 
