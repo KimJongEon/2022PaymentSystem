@@ -1,7 +1,7 @@
 # POS 시스템 (2022PaymentSystem)
 > 프로젝트 개발 배경
 
-- RestAPI와 React를 사용해보기 위해 웹으로 POS 시스템을 만들어 보았습니다.
+- RestAPI와 React를 사용해보기 위해 웹으로 POS 시스템을 만들었습니다.
 
 <br/>
 
